@@ -1,0 +1,25 @@
+#include <iostream>
+#include "tema1.h"
+
+void demonstrateCopyConstructor(tema1 obj) {
+    std::cout << "În demonstrația copy constructor: " << obj.getData() << std::endl;
+}
+
+MyClass createTemporaryObject() {
+    tema1 temp(100);
+    return temp;  // Acesta va folosi move constructorul
+}
+
+int main() {
+    tema1 obj1(42);  // Inițializăm un obiect
+    std::cout << "Valoare inițială: " << obj1.getData() << std::endl;
+
+    // Demonstrăm copy constructorul
+    demonstrateCopyConstructor(obj1);
+
+    // Demonstrăm move constructorul
+    tema1 obj2 = createTemporaryObject();
+    std::cout << "Valoare după move: " << obj2.getData() << std::endl;
+
+    return 0;
+}

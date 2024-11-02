@@ -1,0 +1,3 @@
+/home/mesesan/MyApp/build/CMakeFiles/rebuild_cache.dir
+/home/mesesan/MyApp/build/CMakeFiles/edit_cache.dir
+/home/mesesan/MyApp/build/CMakeFiles/MyApp.dir

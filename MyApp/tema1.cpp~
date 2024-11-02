@@ -1,0 +1,27 @@
+#include "tema1.h"
+
+// Constructor care inițializează membrul data
+tema1::tema1(int value) : data(new int(value)) {}
+
+// Destructor pentru a elibera memoria
+tema1::~tema1() {
+    delete data;
+}
+
+// Getter pentru a obține valoarea lui data
+int tema1::getData() const {
+    return *data;
+}
+
+// Setter pentru a seta o nouă valoare în data
+void MyClass::setData(int value) {
+    *data = value;
+}
+
+// Copy Constructor
+tema1::tema1(const tema1& other) : data(new int(*other.data)) {}
+
+// Move Constructor
+tema1::tema1(tema1&& other) noexcept : data(other.data) {
+    other.data = nullptr;  // Asigurăm că obiectul vechi nu mai deține resursa
+}

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/tema1.h
+
+/home/mesesan/MyApp/src/tema1.cpp
+tema1.h
+/home/mesesan/MyApp/src/tema1.h
+
